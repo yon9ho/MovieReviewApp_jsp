@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>MovieReviewProject</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.xhtml</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+		<welcome-file>default.xhtml</welcome-file>
+	</welcome-file-list>
+	<!-- LoginController -->
+    <servlet>
+        <servlet-name>LoginController</servlet-name>
+        <servlet-class>com.movie.controller.LoginController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginController</servlet-name>
+        <url-pattern>/LoginController</url-pattern>
+    </servlet-mapping>
+
+    <!-- JoinController -->
+    <servlet>
+        <servlet-name>JoinController</servlet-name>
+        <servlet-class>com.movie.controller.JoinController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>JoinController</servlet-name>
+        <url-pattern>/JoinController</url-pattern>
+    </servlet-mapping>
+
+    <!-- LogoutController -->
+    <servlet>
+        <servlet-name>LogoutController</servlet-name>
+        <servlet-class>com.movie.controller.LogoutController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutController</servlet-name>
+        <url-pattern>/LogoutController</url-pattern>
+    </servlet-mapping>
+
+    <!-- MovieListController -->
+    <servlet>
+        <servlet-name>MovieListController</servlet-name>
+        <servlet-class>com.movie.controller.MovieListController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MovieListController</servlet-name>
+        <url-pattern>/MovieListController</url-pattern>
+    </servlet-mapping>
+
+    <!-- MovieDetailController -->
+    <servlet>
+        <servlet-name>MovieDetailController</servlet-name>
+        <servlet-class>com.movie.controller.MovieDetailController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MovieDetailController</servlet-name>
+        <url-pattern>/MovieDetailController</url-pattern>
+    </servlet-mapping>
+
+    <!-- ReviewController -->
+    <servlet>
+        <servlet-name>ReviewController</servlet-name>
+        <servlet-class>com.movie.controller.ReviewController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReviewController</servlet-name>
+        <url-pattern>/ReviewController</url-pattern>
+    </servlet-mapping>
+	
+</web-app>
